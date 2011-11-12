@@ -10,6 +10,8 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.*;
 
+import models.MD5;
+
 @Entity
 public class User extends Model {
     
@@ -25,12 +27,12 @@ public class User extends Model {
 	
 	public User(String name, String password, String fullname) {
 		this.name = name;
-		this.hashedPass = password;
+		this.hashedPass = MD5.crypt(password);
 		this.fullname = fullname;
 	}
 	
 	public static boolean connect(String name, String password) {
-		User user = User.find("byNameAndHashedPass", name, password).first();
+		User user = User.find("byNameAndHashedPass", name, MD5.crypt(password)).first();
 		return user != null;
 	}
 }
