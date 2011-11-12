@@ -4,3 +4,7 @@ modules/*
 tmp/*
 test-result/*
 logs/*
+eclipse/*
+.classpath
+.project
+.settings/*
