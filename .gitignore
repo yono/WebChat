@@ -1,0 +1,6 @@
+conf/application.conf
+lib/*
+modules/*
+tmp/*
+test-result/*
+logs/*
