@@ -13,6 +13,7 @@ import java.util.*;
 import models.MD5;
 
 @Entity
+@Table(name="users")
 public class User extends Model {
     
 	@Required
