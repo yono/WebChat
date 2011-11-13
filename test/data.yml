@@ -4,5 +4,24 @@
 User(bob):
   name:       bob
   hashedPass: 5ebe2294ecd0e0f08eab7690d2a6ee69 #secret
-  #hashedPass: secret
   fullname:   Bob
+
+#Channel(hoge):
+#  name:       hoge
+#  createdAt:  2011-01-01
+#  updatedAt:  2011-04-01
+
+#Channel(fuga):
+#  name:       fuga
+#  createdAt:  2011-02-01
+#  updatedAt:  2011-05-01
+
+#Member(bobToChannelHoge):
+#  user:       bob
+#  channel:    hoge
+#  isOwner:    false
+
+#Member(bobToChannelFuga):
+#  user:       bob
+#  channel:    fuga
+#  isOwner:    false
